@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="AMS-API" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Adler\\source\\repos\\Apartment_Management_System\\API\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Adler\\source\\repos\\Apartment_Management_System\\API\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AMS-Web.config Connection String" description="AMS Connection String used in web.config by the application to access the database." value="Server=tcp:lnm.database.windows.net,1433;Initial Catalog=Apartment_Management_System;Persist Security Info=False;User ID=lengominh;Password=MinhAdler1997;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Adler\\source\\repos\\Apartment_Management_System\\API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AMS']/@connectionString" />
+  </parameter>
+</parameters>

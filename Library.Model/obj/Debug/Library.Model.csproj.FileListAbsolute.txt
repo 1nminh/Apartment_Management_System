@@ -1,0 +1,11 @@
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\bin\Debug\Library.Model.dll
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\bin\Debug\Library.Model.pdb
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.csproj.CoreCompileInputs.cache
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.dll
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.pdb
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.csprojAssemblyReference.cache
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\bin\Debug\Library.Model.dll
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\bin\Debug\Library.Model.pdb
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.csproj.CoreCompileInputs.cache
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.dll
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.pdb

@@ -1,0 +1,253 @@
+.hun {
+    margin: 0px;
+    height: 100rem;
+}
+
+.rightFloat {
+    float: right;
+}
+
+.nav-banner {
+    position: fixed;
+    top: 0px;
+}
+
+a:hover {
+    color: initial;
+    /* Takes initial value of the property which is black in this case */
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.notDisplay {
+    display: none;
+}
+
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+.BlackLink:link {
+    color: #000;
+}
+
+/* unvisited link  */
+
+.BlackLink:visited {
+    color: #000;
+}
+
+/* visited link    */
+
+.BlackLink:hover {
+    color: #000;
+}
+
+/* mouse over link */
+
+.BlackLink:active {
+    color: #000;
+}
+
+/* selected link   */
+
+.navbar-box-shadow {
+    box-shadow: 0px 2px 10px 0 rgba(150, 150, 150, 0.2);
+}
+
+.text-blue {
+    color: #3284fd;
+}
+
+.background-blue {
+    background-color: #3284fd;
+}
+
+.navbar-font-size {
+    font-size: 20px;
+}
+
+.border-blue-bottom {
+    border-bottom: 3px solid #3284fd;
+    font-weight: bold;
+}
+
+.dropdown-navbar {
+    border: 1px solid #3284fd;
+    background-color: white;
+    color: #3284fd;
+    border-radius: 20px;
+    width: 10rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.button-project-blue {
+    border-radius: 15px;
+    background-color: #3284fd;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.button-project-white {
+    border-radius: 15px;
+    background-color: white;
+    color: #3284fd;
+    border: 1px solid #3284fd;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card-project-title {
+    border-bottom: solid 1px #e5e5e5;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(235, 235, 235);
+}
+
+.card-project-text-center {
+    text-align: center;
+}
+
+.card-project-shell {
+    border-right: 1px solid black;
+}
+
+.project-search {
+    border-top-left-radius: 17.5px;
+    border-bottom-left-radius: 17.5px;
+    border: solid 1px #dadada;
+}
+
+.project-search-button {
+    width: auto;
+    border-top-right-radius: 17.5px;
+    border-bottom-right-radius: 17.5px;
+    border: solid 1px #dadada;
+    background-color: white;
+}
+
+.card-project-number {
+    color: #3284fd;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.us-card {
+    width: auto;
+    height: auto;
+    background-color: #e3eeff;
+    border: solid 1px #95c0ff;
+}
+
+.button-plus {
+    border-radius: 100%;
+    background-color: #3284fd;
+    border: 0px solid black;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.border-right-default {
+    border-right: 1px solid rgb(214, 214, 214);
+}
+
+.choosen-nav .nav-link {
+    border-radius: 0rem;
+    border-right: 1px solid rgb(214, 214, 214);
+}
+
+.choosen-nav .nav-link.active,
+.choosen-nav .show>.nav-link {
+    color: #3284fd;
+    background-color: #fafafa;
+    border-top: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-left: 1px solid rgb(214, 214, 214);
+    border-right: 0px solid rgb(214, 214, 214);
+}
+
+.us-sub-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(122, 122, 122);
+}
+
+.input-form-setting {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.us-nav-shadow {
+    box-shadow: 0px 2px 5px 0 rgba(150, 150, 150, 0.2);
+}
+
+.login-input {
+    border: 1px solid rgb(214, 214, 214);
+    outline: none;
+}
+
+.button-priority {
+    width: 80px;
+    mix-blend-mode: undefined;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: solid 1px #b7b7b7;
+}
+
+.tc-card-1 {
+    border-radius: 5.1px;
+    background-image: linear-gradient(157deg, #3284fd, #399ed6);
+    color: white;
+}
+
+.tc-card-2 {
+    border-radius: 5.1px;
+    background-image: linear-gradient(157deg, #3dcb57, #76db7d);
+    color: white;
+}
+
+.tc-card-3 {
+    border-radius: 5.1px;
+    background-image: linear-gradient(337deg, #dc8dff, #9b56ff);
+    color: white;
+}
+
+.tc-nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.tc-nav-pills .nav-link.active,
+.tc-nav-pills .show>.nav-link {
+    color: #3284fd;
+    background-color: white;
+    border-bottom: 3px solid #3284fd;
+}
+
+.btn-collapse:focus {
+    outline: 0 !important;
+}

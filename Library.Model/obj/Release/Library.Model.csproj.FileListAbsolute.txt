@@ -1,0 +1,12 @@
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\bin\Release\Library.Model.dll
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\bin\Release\Library.Model.pdb
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Release\Library.Model.csprojAssemblyReference.cache
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Release\Library.Model.csproj.CoreCompileInputs.cache
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Release\Library.Model.dll
+C:\Users\Adler\source\repos\Apartment_Management_System\Library.Model\obj\Release\Library.Model.pdb
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\bin\Release\Library.Model.dll
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\bin\Release\Library.Model.pdb
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Release\Library.Model.csprojAssemblyReference.cache
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Release\Library.Model.csproj.CoreCompileInputs.cache
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Release\Library.Model.dll
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Release\Library.Model.pdb

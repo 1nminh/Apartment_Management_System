@@ -1,0 +1,103 @@
+﻿@model IPagedList<Library.Model.Models.Account>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().IsAdmin)
+        </th>
+        <th>
+            <p>Full Name</p>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Sex)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().IdCardNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Nationality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Balance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().IsActive)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAdmin)
+            </td>
+            <td>
+                @item.FirstName @item.LastName
+                @*@Html.DisplayFor(modelItem => item.FirstName + item.LastName)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCardNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nationality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Balance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { username = item.Username }, new { @class = "btn btn-secondary" }) |
+                @Html.ActionLink("Details", "Details", new { username = item.Username }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete", new { username = item.Username }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+</table>
+<div id="contentPager" style="margin-top: -20px; padding: 0px !important;">
+    @Html.PagedListPager(Model, _ => Url.Action("Index", "Account",
+    new { pageIndex = _ }))
+    @*new { pageIndex = _, searchValue = Request["searchValue"], sortField = Request["sortField"] }))*@
+</div>

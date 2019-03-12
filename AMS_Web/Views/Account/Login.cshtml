@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/fontawesome-all.css">
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/js/script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 px-0 bg-primary text-center" style="height: 100vh; padding-top: 25vh;">
+
+                <img src="~/Content/image/login.png" alt="">
+
+                <h1 class="text-white font-weight-bold">
+                    APARMENT
+                </h1>
+                <h1 class="text-white font-weight-bold">
+                    MANAGEMENT SYSTEM
+                </h1>
+            </div>
+            <div class="col lg-8" style="padding-top: 25vh;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="font-weight-bold">
+                            LOGIN
+                        </h1>
+                    </div>
+                </div>
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 text-center">
+                            <input type="text" class="border-top-0 border-left-0 border-right-0 my-5 w-100 login-input" name="username" placeholder="Username" >
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 text-center">
+                            <input type="password" class="border-top-0 border-left-0 border-right-0 my-3 w-100 login-input" name="password" placeholder="Password" >
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 px-3 pt-3">
+                                    <input type="checkbox">
+                                    Remember My ID
+                                </div>
+                                <div class="col-lg-6 px-3 pt-3">
+                                    <a href="#" class="float-right">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <input type="submit" class="btn button-project-blue mt-5 w-100" value="LOGIN">
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

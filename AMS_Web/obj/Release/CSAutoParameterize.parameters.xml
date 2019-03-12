@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AMS-Web.config Connection String" description="AMS Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:amssv.database.windows.net,1433;Initial Catalog=AMS_Db;Persist Security Info=False;User ID=lengominh;Password=Minh1997;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\adler\\Desktop\\Apartment_Management_System\\AMS_Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AMS']/@connectionString" />
+  </parameter>
+</parameters>

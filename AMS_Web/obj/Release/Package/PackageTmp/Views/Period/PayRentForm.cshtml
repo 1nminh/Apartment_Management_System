@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "PayRentForm";
+}
+
+<h2>PayRentForm</h2>
+@using (Html.BeginForm("PayTheRent", "Period", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input id="username" name="username" type="text" />
+        <small id="emailHelp" class="form-text text-muted">Number of room</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Amount</label>
+        <input id="amount" name="amount" type="text" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}

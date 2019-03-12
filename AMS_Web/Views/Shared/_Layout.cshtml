@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/fontawesome-all.css" rel="stylesheet" type="text/css" />
+
+    @*@section styles{
+            <link href="~/Content/css/style.css" rel="stylesheet" />
+        }*@
+    @*@RenderSection("Styles", required: false)*@
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Apartment Management</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-brand" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                @if (Session["Username"] != null)
+                {
+                    <label>Welcome, @Session["username"]</label>
+                }
+                @Html.ActionLink("Logout", "Login", "Account", new { area = "" }, new { @class = "btn btn-danger mx-3" })
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        @*<div class="row">
+            <div class="col-lg-12 px-3 pt-4">
+                <font class="font-weight-bold mr-3">
+                    PRIORITY
+                </font>
+                <input type="button" class="btn button-priority mr-2" value="Low">
+                <input type="button" class="btn button-priority mr-2" value="Nomal">
+                <input type="button" class="btn button-priority mr-2" value="High">
+                <div class="text-secondary float-right">
+                    Result Generated in 2.63s
+                </div>
+            </div>
+        </div>*@
+        <div class="row py-5 px-3 border-bottom">
+            <div class="col-lg-3 mx-auto px-0 tc-card-1">
+                <div class="text-center border-bottom py-2">
+                    Room
+                </div>
+                <div class="text-center py-3">
+                    <font class="font-weight-bold" style="font-size: 36px;">
+                        @Html.Action("TotalRoomAvailable", "Room") / @Html.Action("TotalRoomCount", "Room")
+                    </font>
+                    <br />(Available/Total)
+                </div>
+            </div>
+            <div class="col-lg-3 mx-auto px-0 tc-card-2">
+                <div class="text-center border-bottom py-2">
+                    Number of people in Apartment
+                </div>
+                <div class="text-center py-3">
+                    <font class="font-weight-bold" style="font-size: 48px;">
+                        @Html.Action("TotalPeopleInAparment", "Period")     
+                    </font>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 mx-auto px-0 tc-card-3">
+                <div class="text-center border-bottom py-2">
+                    Total Earned
+                </div>
+                <div class="text-center py-3">
+                    <font class="font-weight-bold" style="font-size: 24px;">
+                        @Html.Action("TotalMoneyEarnedInMonth", "Home") / @Html.Action("TotalMoneyEarned", "Home")
+                    </font>
+                    <br />(ThisMonth/Total) - VND
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 px-0">
+                <ul class="nav tc-nav-pills mb-3 border-bottom border-right" id="pills-tab" role="tablist">
+                    <li class="nav-item mr-auto ml-auto">
+                        <a class="nav-link BlackLink active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                           aria-selected="true">Menu</a>
+                    </li>
+              
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="nav flex-column choosen-nav BlackLink" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            @Html.ActionLink("Apartments", "Index", "Apartment", new { area = "" }, new { @id = "v-pills-home-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("Rooms", "Index", "Room", new { area = "" }, new { @id = "v-pills-profile-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("User", "Index", "Account", new { area = "" }, new { @id = "v-pills-messages-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("Feedback", "Index", "Feedback", new { area = "" }, new { @id = "v-pills-1-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("RoomType", "Index", "RoomType", new { area = "" }, new { @id = "v-pills-2-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("Service", "Index", "Service", new { area = "" }, new { @id = "v-pills-3-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("Service Pay List", "Index", "ServicePaycheck", new { area = "" }, new { @id = "v-pills-3-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("Request", "Index", "Request", new { area = "" }, new { @id = "v-pills-3-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("User Period", "Index", "Period", new { area = "" }, new { @id = "v-pills-3-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                            @Html.ActionLink("User Pay Log", "Index", "RoomPayLog", new { area = "" }, new { @id = "v-pills-3-tab", @class = "nav-link BlackLink active px-5", @role = "tab" })
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row py-3 border-top border-bottom">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12 px-4">
+                                <font class="font-weight-bold">
+                                    Charged Service
+                                </font>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 px-5 py-3">
+                                @Html.ActionLink("Room", "CreateServiceForRoom", "ServicePaycheck", new { area = "" }, new { @class = "btn btn-primary" })
+                            </div>
+                        </div>
+                        <div class="row border-bottom">
+                            <div class="col-lg-12 px-5 py-3 ">
+                                @Html.ActionLink("Person", "Create", "ServicePaycheck", new { area = "" }, new { @class = "btn btn-primary" })
+                            </div>
+                        </div>                 
+                        <div class="row pt-3">
+                            <div class="col-lg-12 pl-5">
+                                <font class="font-weight-bold">
+                                    Pay rent
+                                </font>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 px-5 py-3">
+                                @Html.ActionLink("Pay Rent", "PayRentForm", "Period", new { area = "" }, new { @class = "btn btn-primary" })
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-11 px-0 bg-light px-5 py-5 border">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="~/Content/js/jquery-3.3.1.min.js"></script>
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/script.js"></script>
+    @*<script src="~/Content/js/views.js"></script>*@
+</body>
+</html>
