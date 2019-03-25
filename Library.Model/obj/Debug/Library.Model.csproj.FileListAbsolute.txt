@@ -9,3 +9,4 @@ C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\bin\Debug\Libra
 C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.csproj.CoreCompileInputs.cache
 C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.dll
 C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.pdb
+C:\Users\adler\Desktop\Apartment_Management_System\Library.Model\obj\Debug\Library.Model.csprojAssemblyReference.cache
